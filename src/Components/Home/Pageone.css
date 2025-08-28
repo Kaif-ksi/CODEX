@@ -1,0 +1,71 @@
+.one {
+    /* background-color: red; */
+    width: 32vw;
+    position: relative;
+    top: -380px;
+    left: 170px;
+} 
+
+.pagetitle {
+    font-size: 3.3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, 
+    #8f68ff, #fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.titleone {
+    /* background-color: aquamarine; */
+    width: 23vw;
+    position: relative;
+    top: -400px;
+    left: 200px;
+}
+.title{
+    font-size: 1.2rem;
+    position: relative;
+    left: 80px;
+    font-family: monospace;
+}
+.paragraph {
+    /* background-color: cornflowerblue; */
+    width: 30vw;
+    position: relative;
+    top: -350px;
+    left: 200px;
+
+}
+.para {
+    font-size: 1.1rem;
+}
+.btn-explore {
+    /* background-color: red; */
+    width: 16vw;
+    position: relative;
+    top: -300px;
+    left: 280px;
+}
+.explore {
+    font-size: 2.1rem;
+    color: white;
+    height: 60px;
+    width: 240px;
+    border-radius: 30px;
+    background-color: black;
+}
+.arrow {
+    height: 20px;
+    width: 20px;
+}
