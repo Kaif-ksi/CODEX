@@ -6,12 +6,11 @@ import Navbar from './Components/Navbar/Navbar.js'
 function App() {
   return (
     <>
-    <div className="main">
-      <Navbar/>
-      <Background/>
-      <Pageone/>
-      </div>
-      <div className="main-two">
+      <Navbar />
+      <div className="main">
+        <Pageone/>
+    <Background/>
+        
         
       </div>
     </>

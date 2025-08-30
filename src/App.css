@@ -1,4 +1,34 @@
-.main-two {
+/* .main-two {
     height: 100vh;
     background: linear-gradient(to bottom, #0A0535, #253cd3);
+} */
+*{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+     }
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0%;
+    background: var(--primary-color);
+}
+
+
+
+:root {
+    --primary-color: #f8f8ff;
+    --secondary-color: #3e3e42;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3e3e42;
+    --secondary-color: #f8f8ff;
+}
+
+body, .main {
+    background: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    transition: background 0.3s, color 0.3s;
 }

@@ -1,22 +1,54 @@
-.one {
-    /* background-color: red; */
-    width: 32vw;
-    position: relative;
-    top: -380px;
-    left: 170px;
-} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.typed-text {
+  color: #007bff;
+  font-weight: bold;
+  /* border-right: 2px solid #007bff; */
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+}
+
+.pageone-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-left: 48px;
+    gap: 0;
+    min-height: 80vh;
+}
+.pagetitle {
+    margin-bottom: 0.5em;
+}
+.paragraph {
+    margin-bottom: 0.5em;
+}
+.titleone {
+    margin-bottom: 0.5em;
+}
+.btn-explore {
+    margin-top: 0.5em;
+}
+
 
 .pagetitle {
-    font-size: 3.3rem;
+    font-size: 4.3rem;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, 
-    #8f68ff, #fc72ff);
+    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 2.5s linear infinite;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    margin-top: 0em;
 
 }
 
@@ -27,35 +59,30 @@
 }
 
 .titleone {
-    /* background-color: aquamarine; */
-    width: 23vw;
-    position: relative;
-    top: -400px;
-    left: 200px;
+    width: auto;
 }
-.title{
-    font-size: 1.2rem;
-    position: relative;
-    left: 80px;
+.title {
+    font-size: 2.2rem;
     font-family: monospace;
+    text-align: left;
+    margin-bottom: 0.2em;
 }
 .paragraph {
-    /* background-color: cornflowerblue; */
     width: 30vw;
-    position: relative;
-    top: -350px;
-    left: 200px;
+    margin-bottom: 2.2em;
 
 }
 .para {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 2.5em;
 }
 .btn-explore {
     /* background-color: red; */
     width: 16vw;
     position: relative;
     top: -300px;
-    left: 280px;
+    left: 200px;
+    margin-left: 25vw;
 }
 .explore {
     font-size: 2.1rem;
@@ -64,8 +91,10 @@
     width: 240px;
     border-radius: 30px;
     background-color: black;
+    margin-left: 16vw;
+    z-index: 5;
 }
 .arrow {
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
 }
