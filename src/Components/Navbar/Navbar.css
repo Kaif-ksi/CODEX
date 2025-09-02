@@ -176,8 +176,9 @@ a {
 .logo{
     height: 20vh;
     width: 28vw;
-    margin-top: 1vh;
-    margin-left: 15px;
+    margin-top: 2vh;
+
+ margin-left: 15px;
 }
 
 .navbar{
@@ -189,6 +190,7 @@ a {
     /* background-color: var(--primary-color);
     color: var(--secondary-color); */
 
+    
 }
 .btn-login:hover {
     background-color: black;
