@@ -10,8 +10,16 @@
 }
 
 @media (max-width: 900px) {
+    .navbar a{
+    text-decoration: none;
+    /* color: white; */
+    background-color: var(--primary-color);
+    color: var(black,--secondary-color);
+
+}
     .navbar {
         gap: 0;
+        height: 10vh;
         padding-right: 8px;
     }
     .hamburger {
@@ -19,13 +27,13 @@
     }
     .nav-links {
         position: fixed;
-        top: 0;
+        top: 10vh;
         right: -100vw;
         flex-direction: column;
         background: var(--primary-color, #222);
         color: var(--secondary-color, #fff);
-        width: 60vw;
-        height: 100vh;
+        width: 40vw;
+        height: 30vh;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 80px 24px 24px 24px;
@@ -144,14 +152,18 @@ a {
     z-index: 1;
     list-style: none;
     display: flex;
+    
     gap: 2vw;
     margin: 0;
     padding: 0;
+    align-items: center;
+    transition: right 0.3s;
 .navbar ul,
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2vw;
+    
     margin: 0;
     padding: 0;
     align-items: center;
@@ -218,6 +230,7 @@ a {
 .navbar a{
     text-decoration: none;
     color: white;
+   
 
 }
 
@@ -234,7 +247,12 @@ a {
     /* background-color: red; */
     z-index: -5;
     margin-top: 0%;
-    gap: 45vw;
+    /* gap: 45vw; */
+    width: 100vw;
+    top: 0;
+    justify-content: space-between;
+    /* padding: 20px 5%; */
+
     /* background-color: var(--primary-color);
     color: var(--secondary-color); */
 

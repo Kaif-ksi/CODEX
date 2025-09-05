@@ -6,6 +6,7 @@ import moon from '../../Assests/moon.png';
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(() => document.documentElement.getAttribute('data-theme') === 'dark');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const listener = () => {
@@ -24,6 +25,12 @@ export default function Navbar() {
     });
   };
 
+  const handleNavClick = () => {
+    if (window.innerWidth <= 900) {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     
 
@@ -31,17 +38,21 @@ export default function Navbar() {
       <div className="logo">
         <img src={logo} className="nav-logo" alt="..." />
       </div>
-      <ul className="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Resources</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Contact</a></li>
-        <button className="btn-login">Login</button>
-        <button className="mode-toggle" onClick={handleToggle} aria-label="Toggle dark mode">
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        &#9776;
+      </div>
+      <ul className={`nav-links${menuOpen ? ' open' : ''}`}>
+        <li><a href="/" onClick={handleNavClick}>Home</a></li>
+        <li><a href="/" onClick={handleNavClick}>Resources</a></li>
+        <li><a href="/" onClick={handleNavClick}>About</a></li>
+        <li><a href="/" onClick={handleNavClick}>Contact</a></li>
+        <button className="btn-login" onClick={handleNavClick}>Login</button>
+        <button className="mode-toggle" onClick={(e) => { handleToggle(); handleNavClick(); }} aria-label="Toggle dark mode">
           <img src={darkMode ? sun : moon} alt={darkMode ? 'Light mode' : 'Dark mode'} className="mode-icon" />
         </button>
       </ul>
     </div>
+    
     
   );
 }

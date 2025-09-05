@@ -98,3 +98,46 @@
     height: 22px;
     width: 22px;
 }
+
+@media (max-width: 900px) {
+    .pageone-vertical {
+        
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        gap: 0;
+        min-height: 70vh;
+    }
+    .pagetitle {
+        font-size: 3rem;
+        margin-bottom: 0.5em;
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 0.2em;
+    }
+    .paragraph {
+        width: 80vw;
+        margin-bottom: 1.5em;
+    }
+    .para {
+        font-size: 0.9rem;
+        margin-bottom: 1.5em;
+    }
+    .btn-explore {
+        position: relative;
+        top: -150px;
+        left: 0;
+        margin-left: 0;
+    }
+    .explore {
+        font-size: 1.5rem;
+        height: 50px;
+        width: 180px;
+    }
+    
+}
