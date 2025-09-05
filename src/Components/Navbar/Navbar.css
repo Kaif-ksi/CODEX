@@ -1,3 +1,51 @@
+/* Hamburger styles and responsive navbar */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    background: none;
+    border: none;
+    z-index: 102;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        gap: 0;
+        padding-right: 8px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        flex-direction: column;
+        background: var(--primary-color, #222);
+        color: var(--secondary-color, #fff);
+        width: 60vw;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 24px 24px 24px;
+        gap: 32px;
+        box-shadow: -2px 0 12px rgba(0,0,0,0.08);
+        z-index: 101;
+        transition: right 0.3s;
+    }
+    .nav-links.open {
+        right: 0;
+    }
+    .nav-logo {
+        height: 48px;
+        width: 120px;
+    }
+    .logo {
+        height: 48px;
+        width: 120px;
+    }
+}
 .mode-toggle {
     background: none;
     border: none;
